@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Debug FastAPI",
+            "type": "python",
+            "request": "launch",
+            "module": "uvicorn",                // Specify that uvicorn is a Python module
+            "args": [
+                "src.api:app",                 // Replace with your actual module path
+                "--host", "127.0.0.1",
+                "--port", "8000",
+                "--reload"                     // Enables hot reload during development
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

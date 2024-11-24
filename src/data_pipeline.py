@@ -4,12 +4,12 @@ import utils as utils
 from sklearn.model_selection import train_test_split
 
 
-def read_data(return_file=False):
+def read_data(return_file=True):
     # Read data
     data = pd.read_csv(CONFIG_DATA['raw_dataset_path'], 
                        sep=',',
-                       index_col=CONFIG_DATA['index_column'])
-
+                    #    index_col=CONFIG_DATA['index_column'])
+    )
     # Print data
     print('data shape   :', data.shape)
 
@@ -85,6 +85,10 @@ def split_train_test(return_file=True):
         return X_train, X_valid, X_test, y_train, y_valid, y_test
 
 
+
+'''
+    code below enables .py file when we executed in the terminal
+'''
 if __name__ == '__main__':
     # 1. Load configuration file
     CONFIG_DATA = utils.config_load()

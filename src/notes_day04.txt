@@ -1,0 +1,22 @@
+# api.py
+notes for api.py
+
+
+1. initial process
+load (oickle),
+preprocess
+predict
+
+
+2. API - object 
+
+--
+dengan FastAPI, 
+request ke source, bisa dengan beberapa protocol, HTTP(S)
+[get, post, put, delete]
+
+1.47'
+
+
+
+
